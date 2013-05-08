@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+            android:key="username"
+            android:title="User name"
+            android:defaultValue="root"
+            android:inputType="text"
+            android:summary="The login user"
+            />
+
+    <EditTextPreference
+            android:key="password"
+            android:title="Password"
+            android:defaultValue="rootroot"
+            android:summary="The password"
+            android:inputType="textPassword"
+            android:password="true"
+
+            />
+
+    <PreferenceCategory></PreferenceCategory>
+
+    <EditTextPreference
+            android:key="server"
+            android:title="Server/Host"
+            android:defaultValue="127.0.0.1"
+            android:summary="The server/host IP address"
+            android:inputType="phone"
+            />
+
+    <EditTextPreference
+            android:key="connection_timeout"
+            android:title="Connection Timeout"
+            android:defaultValue="120"
+            android:summary="The remote session timeout"
+            android:inputType="numberDecimal"
+            />
+
+    <PreferenceCategory></PreferenceCategory>
+
+    <EditTextPreference
+            android:key="ssh_port"
+            android:title="SSH port"
+            android:defaultValue="22"
+            android:summary="The SSH port used for terminal"
+            android:inputType="numberDecimal"
+            />
+
+    <PreferenceCategory></PreferenceCategory>
+
+    <CheckBoxPreference
+            android:key="usb"
+            android:title="USB enabled"
+            android:clickable="true"
+            android:defaultValue="false"
+            android:enabled="true"
+            android:summary="Enable USB support"
+            />
+
+    <EditTextPreference
+            android:key="cli_port"
+            android:title="CLI port"
+            android:defaultValue="9830"
+            android:summary="Listening port of CLISS agent"
+            android:inputType="numberDecimal"
+            />
+
+    <EditTextPreference
+            android:key="netconf_port"
+            android:title="NETCONF port"
+            android:defaultValue="830"
+            android:summary="Listening port of NETCONF agent"
+            android:inputType="numberDecimal"
+            />
+</PreferenceScreen>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:orientation="vertical"
+                             android:padding="4dp"
+                             android:gravity="center"
+        >
+
+    <TextView
+            android:id="@+id/server"
+            android:text="t"
+            android:gravity="center_horizontal"
+            android:ellipsize="start"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <TextView
+            android:id="@+id/message"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="center_horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <TextView
+            android:text="Username"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <EditText
+            android:id="@+id/username"
+            android:hint="Login user name"
+            android:inputType="text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    <TextView
+            android:text="Password"
+            android:textSize="10sp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <EditText
+            android:id="@+id/password"
+            android:hint="Login pass word"
+            android:inputType="textPassword"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    <Button
+            android:text="Login"
+            android:onClick="login"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+</android.widget.LinearLayout>

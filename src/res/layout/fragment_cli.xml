@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THIS IS CLI!!!" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="bakgrundsbild..."
+        android:src="@drawable/ic_launcher" />
+
+     -->
+
+    <EditText
+            android:id="@+id/in"
+            android:hint="Type a CLI message"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionGo"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="56dp" android:layout_alignParentTop="true"
+            android:layout_marginTop="190dp"/>
+    <TextView
+            android:id="@+id/out"
+
+            android:layout_width="206dp"
+            android:layout_height="115dp"
+            android:layout_alignRight="@+id/in" android:layout_alignParentTop="true" android:layout_marginTop="16dp"/>
+
+    <ListView
+            android:id="@+id/messages"
+            android:dividerHeight="2dp"
+
+            android:layout_below="@id/in"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <Button
+            android:text="execute"
+            android:onClick="executeCommand"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="52dp" android:layout_alignParentTop="true"
+            android:layout_marginTop="217dp"/>
+
+
+
+</LinearLayout>
