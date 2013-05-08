@@ -28,6 +28,7 @@ public class CliSession {
     protected static final String DEFAULT_PROMPT = "(?<!\\w)>\\s*$";
     protected static final int DEFAULT_CLI_PORT = 22; 
     
+    
    public CliSession(String server, int port, String user, String password){
         Log.d(LOG, "LOGIN: " + server + ":" + port);
 
