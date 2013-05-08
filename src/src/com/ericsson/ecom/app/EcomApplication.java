@@ -25,6 +25,7 @@ public class EcomApplication extends Application {
     private static final String NC_PORT = "netconf_port";
     private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
+    private static final String IP = "ip";
     
 
     private static HashMap<String,SshSession>  SessionMap = new HashMap<String, SshSession>();
