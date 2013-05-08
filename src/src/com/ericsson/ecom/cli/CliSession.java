@@ -34,7 +34,7 @@ public class CliSession {
         SshSession sshSession = new SshSession(server,SSH_SUBSYSTEM ,user,password);
 
 
-
+      /*
 
             app.setSession("ssh", sshSession);
         }
@@ -46,7 +46,7 @@ public class CliSession {
 
         cliSession =
 
-
+         */
     }
 
 

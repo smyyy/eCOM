@@ -80,12 +80,17 @@ public class LoginActivity extends Activity {
         String user = username.getText().toString();
         String pwd = password.getText().toString();
         Log.d(LOG, "LOGIN: " + user + " / " + pwd);
-
+        /*
         EcomApplication app = (EcomApplication) getApplication();
         String server = app.getServer();
         int port = app.getPort();
 
         CliSession cli = new CliSession(server, port, user, pwd);
         NetconfSession nc = new NetconfSession(server, port, user, pwd);
+
+       */
+        startActivity(new Intent(this, MainActivity.class));
+
+
     }
 }
